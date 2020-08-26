@@ -6,15 +6,22 @@
   "author": "Michael Carneal <mcarneal09@yahoo.com>",
   "license": "MIT",
   "scripts": {
+    "start": "node index.js",
+    "run": "yarn start",
     "test": "jest "
   },
   "dependencies": {
-    "jest": "^26.4.2"
+    "dotenv": "^8.2.0",
+    "jest": "^26.4.2",
+    "winston": "^3.3.3"
   },
   "jest": {
     "verbose": true,
     "collectCoverage": false,
-    "noStackTrace": true
+    "noStackTrace": true,
+    "setupFiles": [
+      "<rootDir>/.jest/setEnvVars.js"
+    ]
   },
   "devDependencies": {
     "jest-simple-dot-reporter": "^1.0.5",
