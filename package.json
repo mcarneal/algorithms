@@ -6,13 +6,18 @@
   "author": "Michael Carneal <mcarneal09@yahoo.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest "
   },
   "dependencies": {
     "jest": "^26.4.2"
   },
   "jest": {
-    "verbose": false,
-    "collectCoverage": true
+    "verbose": true,
+    "collectCoverage": false,
+    "noStackTrace": true
+  },
+  "devDependencies": {
+    "jest-simple-dot-reporter": "^1.0.5",
+    "jest-standard-reporter": "^1.1.1"
   }
 }
