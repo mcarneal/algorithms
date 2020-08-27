@@ -17,6 +17,6 @@ const app = () => {
         1,
     ]
     const results = isAlternating(inputArray)
-    W.info(` results: ${results}`)
+    W.info(`results: ${results}`)
 }
 app()

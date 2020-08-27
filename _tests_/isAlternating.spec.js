@@ -6,7 +6,7 @@ const {
     isAlternating,
 } = require(`../lib/alorithms`)
 
-describe(`isAlternating: should return minmum flips required to alternate the string`, () => {
+describe(`isAlternating: should return minimum flips required to alternate the string`, () => {
     test(`it should return 0 if no flips occurred`, () => {
         const inputArray = [
             0,
