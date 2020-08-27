@@ -1,21 +1,22 @@
 require('dotenv').config()
-
-const {
-    largestInt,
-} = require(`./lib/alorithms`)
 const {
     W,
 } = require(`./lib/winston`)
-
-const run = () => {
-    try {
-        W.info(`Application initiated`)
-        largestInt([0,1,-1,2])
-        W.info(`Application terminated`)
-    }
-    catch (e) {
-        W.error(`Error occurred while initiating the application`, e)
-    }
+const {
+    isAlternating
+} = require(`./lib/alorithms`)
+const app = () => {
+    const inputArray = [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+    ]
+    const results = isAlternating(inputArray)
+    W.info(` results: ${results}`)
 }
-
-run()
+app()
